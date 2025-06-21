@@ -1,7 +1,13 @@
 from django.db import models
 
 class Income(models.Model):
-    date = models.DateField()
+    amount = models.DecimalField(verbose_name='Amount', max_digits=10, decimal_places=2)
+    date = models.DateField(verbose_name='Date')
+    description = models.CharField(verbose_name='Narrations', max_length=255)
+    
+    class Meta:
+        verbose_name = 'Income'
+        verbose_name_plural = 'Income Records'
     source = models.CharField(max_length=100)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True)

@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'income_expense.apps.IncomeExpenseConfig',  # 添加这行
+    'income_expense.apps.IncomeExpenseConfig',  # 確保這裡的類名與 apps.py 一致
 ]
 
 MIDDLEWARE = [
@@ -105,7 +105,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
 
 USE_I18N = True

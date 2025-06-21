@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 class IncomeExpenseConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
     name = 'income_expense'
+    verbose_name = 'Annual income & expenditure'  # 中文應用名稱
