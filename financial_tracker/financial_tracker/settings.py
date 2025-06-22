@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'income_expense.apps.IncomeExpenseConfig',  # 確保這裡的類名與 apps.py 一致
+    'import_export',
 ]
 
 MIDDLEWARE = [
